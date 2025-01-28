@@ -36,9 +36,6 @@ const TrackList: React.FC<TrackListProps> = ({ tracks, onTrackSelect, onRemoveTr
           <tr className="border-b border-gray-700 text-sm">
             <th className="px-4 py-2">#</th>
             <th className="px-4 py-2">Title</th>
-            <th className="px-4 py-2 text-right">
-              <Clock3 className="w-4 h-4" />
-            </th>
             <th className="w-12"></th>
           </tr>
         </thead>
@@ -56,7 +53,6 @@ const TrackList: React.FC<TrackListProps> = ({ tracks, onTrackSelect, onRemoveTr
                 </div>
               </td>
               <td className="px-4 py-2">{track.title}</td>
-              <td className="px-4 py-2 text-gray-400 text-right">{track.duration}</td>
               <td className="px-4 py-2 text-right">
                 <button
                   onClick={(e) => handleMoreClick(e, track.id)}
